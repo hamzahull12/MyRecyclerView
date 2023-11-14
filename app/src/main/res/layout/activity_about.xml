@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AboutActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/primary">
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_about"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="110dp"
+            android:src="@drawable/profile"
+            android:outlineProvider="background"
+            android:layout_centerHorizontal="true"
+            android:clipToOutline="true"/>
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/data_name"
+            android:textColor="#3D4440"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_below="@id/image_about"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/text_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textColor="#727776"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_below="@id/text_name"
+            android:gravity="center_horizontal"/>
+    </RelativeLayout>
+</ScrollView>
